@@ -54,4 +54,4 @@ accumulate_grad_batches: 2
 deterministic: True
 gpus: 2
 max_epochs: 30
-devices: [2, 3]
+devices: 2,3
