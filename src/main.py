@@ -110,7 +110,7 @@ def load_trainer(args):
     progress_bar = TQDMProgressBar(refresh_rate=args.refresh_rate)
 
     # Sets DDP strategy for multi-GPU training.
-    if len(args.gpus) > 1:
+    if args.gpus > 1:
         args.strategy = "ddp"
     else: None
     #args.strategy = None
