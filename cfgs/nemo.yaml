@@ -53,6 +53,6 @@ queries: 300
 
 accumulate_grad_batches: 2
 deterministic: True
-gpus: 2, 3
+gpus: 0, 1, 2, 3
 max_epochs: 1
 
