@@ -414,7 +414,8 @@ class WS_DETR(pl.LightningModule):
 
         # Gathers loss across GPUs.
         loss = torch.stack(losses).mean()
-        loss = self.all_gather(loss).mean().item()
+        loss = self.all_gather(loss)
+        loss = loss.mean().item()
 
         # Gathers COCO results across GPUs.
         results = self.all_gather(results)
