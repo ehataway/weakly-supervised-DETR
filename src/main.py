@@ -111,7 +111,10 @@ def load_trainer(args):
 
     # Sets DDP strategy for multi-GPU training.
     if args.gpus > 1:
-        args.strategy = "ddp"
+        args.strategy = "deepspeed"
+        args.accelerator = "gpu"
+        args.devices = "auto"
+
     else: None
     #args.strategy = None
     # Instantiates PL Trainer using args.
