@@ -1,9 +1,9 @@
-train_imgs_dir: /home/project2reu/data/nemo/train_images
-train_anns: /home/project2reu/data/nemo/annotations/annotation_train.json
-val_imgs_dir: /home/project2reu/data/nemo/val_images
-val_anns: /home/project2reu/data/nemo/annotations/annotation_val.json
-test_imgs_dir: /home/project2reu/data/nemo/val_images
-test_anns: /home/project2reu/data/nemo/annotations/annotation_val.json
+train_imgs_dir: /home/project2reu/data/nemo_single/train_images
+train_anns: /home/project2reu/data/nemo_single/annotations/annotation_density_train.json
+val_imgs_dir: /home/project2reu/data/nemo_single/val_images
+val_anns: /home/project2reu/data/nemo_single/annotations/annotation_density_val.json
+test_imgs_dir: /home/project2reu/data/nemo_single/val_images
+test_anns: /home/project2reu/data/nemo_single/annotations/annotation_density_val.json
 infer_imgs_dir: ""
 save_dir: ""
 
