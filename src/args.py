@@ -22,7 +22,7 @@ def parse_args():
         formatter_class=configargparse.ArgumentDefaultsHelpFormatter)
     
     parser.add_argument(
-        "--config", is_config_file=True, help="config file path", default='cfgs/nemo.yaml'
+        "--config", is_config_file=True, help="config file path", default='cfgs/nemo_single.yaml'
     )
 
     #parserb = Parser(de)
