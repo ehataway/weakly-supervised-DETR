@@ -63,7 +63,7 @@ def mil_label(batch_size, num_classes, targets, offset=0):
             cls -= offset
 
             # Sets class slot to 1 in the label.
-            mil_labels[j][cls] = [1,1]
+            mil_labels[j][cls] = 0
 
     return mil_labels
 
