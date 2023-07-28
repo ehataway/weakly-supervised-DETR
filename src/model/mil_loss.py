@@ -60,7 +60,7 @@ def mil_label(batch_size, num_classes, targets, offset=0):
     for j, img_target in enumerate(targets):
         for cls in img_target["image_labels"]:
             # Subtracts offset (e.g., if the labels are 1-indexed).
-            cls -= offset
+            #cls -= offset
 
             # Sets class slot to 1 in the label.
             mil_labels[j][cls] = 1
